@@ -78,9 +78,11 @@ public class Main extends Application
         /**
          * Calculate BMI and display result
          */
-        btnCalculate.setOnAction(new EventHandler<ActionEvent>() {
+        btnCalculate.setOnAction(new EventHandler<ActionEvent>()
+        {
             @Override
-            public void handle(ActionEvent actionEvent) {
+            public void handle(ActionEvent actionEvent)
+            {
                 double bmiResult;
                 double myWeight = Double.parseDouble(txtWeight.getText());
                 double myHeight = Double.parseDouble(txtHeight.getText());
@@ -110,7 +112,8 @@ public class Main extends Application
         gridPane.add(new Label("30 or greater"), 1, 13);
 
         // Set grid pane border and fontsize
-        gridPane.setStyle(
+        gridPane.setStyle
+        (
                 "-fx-border-color: black; " +
                         "-fx-font-size: 20;" +
                         " -fx-font-family: Consolas;"
@@ -123,7 +126,8 @@ public class Main extends Application
         primaryStage.show();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         launch(args);
     }
 }
